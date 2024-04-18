@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <style>
+        .body{
+            background-color: white;
+        }
+        .bottom-tab {
+            width: 100%;
+            display: flex;
+            gap: 40px;
+            justify-content: center;
+            padding: 10px 0px;
+            border-top: 1px solid gray;
+            position: fixed;
+            bottom: 0;
+            background: white;
+        }
+        .bottom-tab a {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-decoration: none;
+            color: black;
+            font-size: small;
+        }
+        @media (min-width:768px) and (max-width:1400px) {
+          .col-lg{
+            margin-top: 10px;
+          }  
+          .cent{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+          }
+          .cardlarge{
+            border-radius: 0px;
+          }
+          .cardlarge1{
+            margin-top: 0px;
+            border-radius: 0px;
+          }
+        }
+        @media (min-width:100px) and (max-width:768px) {
+            .body{
+                background-color: royalblue;
+            }
+            .col-lg{
+                margin-top: -30px;
+            }
+            .cardlarge1{
+                border-radius: 0px;
+                margin-top: 15px;
+            }
+            .cardlarge{
+                border-radius: 0px;
+                margin-bottom: -17px;
+            }
+        }
+    
+    </style>
+</head>
+<body class="body">
+    <div class="container">
+
+        <center>
+            <div class="row">
+                <div class="col">
+                    <a href="index.html"><img src="newheaderlogo.svg" class="img-fluid col-lg mb-5" width="150px">
+                    </a>
+                </div>
+            </div>
+        </center>
+
+        
+
+       <div class="row">
+        <div class="col">
+            <nav class="navbar navbar-expand-md navbar-expand-lg  fixed-top d-none d-md-block" style="background-color: royalblue; height: 90px;">
+                <div class="container-fluid">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="margin-top: 35px;">
+                      <li class="nav-item">
+                        <a class="nav-link text-white" aria-current="page" href="home.html">Accounts</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-white" href="transfer.html">Transfer</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-white" href="activity.html">Activities</a>
+                      </li>
+                    </ul>
+                    
+                    
+              
+                    <span>
+                        <div>
+                            <p>
+                                <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#logoutcollapse" aria-expanded="false" aria-controls="logoutcollapse">
+                                    <i class="bi bi-person-circle text-white" style="font-size: xx-large;"></i>               
+                                 </button>
+                            </p>   
+                            <div>
+                                <div class="collapse collapse-horizontal" id="logoutcollapse">
+                                  <div class="card card-body" style="width: 100px;">
+                                    <a href="index.html" class="float-end text-dark text-decoration-none">Log out</a>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                    </span>
+                  </div>
+                </div>
+              </nav>
+        </div>
+       </div>
+
+                <div class="row">
+                    <div class="col">
+                        <p class="text-black" style="font-size: xx-large;">PcH HOLDINGS</p>
+                        <p class="text-black mb-5" style="margin-top:-18px; font-size: large;">November 28, 2023</p>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                  <div class="col">
+                      <div class="list-group" style="width: 100%;">
+                        <a href="#" class="list-group-item list-group-item-action">
+                          <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">1ST GRANT PAID TO JP CLUBS</h5>
+                            <small class="text-success">+$10,000.00</small>
+                          </div>
+                          <p class="mb-1">Credit</p>
+                          <small>11/28/2023</small>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">
+                          <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">VIP MEMBERSHIP PAYMENT</h5>
+                            <small class="text-success">+$22,300.00</small>
+                          </div>
+                          <p class="mb-1">Credit</p>
+                          <small>11/28/2023</small>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">
+                          <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">EVENT HOSTING AND PROMOTION</h5>
+                            <small class="text-success">+$10,000.00</small>
+                          </div>
+                          <p class="mb-1">Credit</p>
+                          <small>11/28/2023</small>
+                        </a>
+                          <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+                            <div class="d-flex justify-content-between">
+                              <h5 class="mb-1">DJ GIGS AND PERFORMANCES</h5>
+                              <small class="text-danger">-$500.00</small>
+                            </div>
+                            <p class="mb-1">Pending</p>
+                            <small>Debit</small>
+                          </a>
+                          <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                              <h5 class="mb-1">TIK-TOK GIG</h5>
+                              <small class="text-danger">-$5.00</small>
+                            </div>
+                            <p class="mb-1">Pending</p>
+                            <small>Debit</small>
+                          </a>
+                          <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                              <h5 class="mb-1">WHOLE FOODS MARKET</h5>
+                              <small class="text-danger">-$217.00</small>
+                            </div>
+                            <p class="mb-1">Debit</p>
+                            <small>10/15/2023</small>
+                          </a>
+                          <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                              <h5 class="mb-1">MOBILE DEPOSIT</h5>
+                              <small class="text-success">+$5,000.00</small>
+                            </div>
+                            <p class="mb-1">Credit</p>
+                            <small>10/15/2023</small>
+                          </a>
+                          <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                              <h5 class="mb-1">MOBILE DEPOSIT</h5>
+                              <small class="text-success">+$5,000.00</small>
+                            </div>
+                            <p class="mb-1">Credit</p>
+                            <small>10/15/2023</small>
+                          </a>
+                          <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                              <h5 class="mb-1">ONLINE TRANSFER(...5626)</h5>
+                              <small class="text-danger">-$1,000.00</small>
+                            </div>
+                            <p class="mb-1">Debit</p>
+                            <small>10/15/2023</small>
+                          </a>
+                          <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                              <h5 class="mb-1">SHELL</h5>
+                              <small class="text-danger">-$230.00</small>
+                            </div>
+                            <p class="mb-1">Debit</p>
+                            <small>10/15/2023</small>
+                          </a>
+                          <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                              <h5 class="mb-1">BLUE BOTTLE CAFE</h5>
+                              <small class="text-danger">-$30.00</small>
+                            </div>
+                            <p class="mb-1">Debit</p>
+                            <small>10/15/2023</small>
+                          </a>
+                          <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                              <h5 class="mb-1">WIRE TRANSFER</h5>
+                              <small class="text-success">+$2,000.65</small>
+                            </div>
+                            <p class="mb-1">Credit</p>
+                            <small>10/14/2023</small>
+                          </a>
+                          <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                              <h5 class="mb-1">PURCHASE FARM N SPICE</h5>
+                              <small class="text-danger">-$80.15</small>
+                            </div>
+                            <p class="mb-1">Debit</p>
+                            <small>10/14/2023</small>
+                          </a>
+                          <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                              <h5 class="mb-1">PURCHASE RUBIO'S</h5>
+                              <small class="text-danger">-$120.56</small>
+                            </div>
+                            <p class="mb-1">Debit</p>
+                            <small>10/14/2023</small>
+                          </a>
+                          <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                              <h5 class="mb-1">ADJUSTMENT CASH ADVANCES</h5>
+                              <small class="text-success">+$204.55</small>
+                            </div>
+                            <p class="mb-1">Credit</p>
+                            <small>10/14/2023</small>
+                          </a>
+                          <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                              <h5 class="mb-1">Starbucks</h5>
+                              <small class="text-danger">-$19.24</small>
+                            </div>
+                            <p class="mb-1">Debit</p>
+                            <small>10/12/2023</small>
+                          </a>
+                          <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                              <h5 class="mb-1">WIRE TRANSFER</h5>
+                              <small class="text-success">+$22,000.42</small>
+                            </div>
+                            <p class="mb-1">Credit</p>
+                            <small>10/11/2023</small>
+                          </a>
+                          <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                              <h5 class="mb-1">PURCHASE RUBIO'S</h5>
+                              <small class="text-danger">-$110.22</small>
+                            </div>
+                            <p class="mb-1">Debit</p>
+                            <small>10/11/2023</small>
+                          </a>
+                          <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                              <h5 class="mb-1">PURCHASE WALMART</h5>
+                              <small class="text-danger">-$290.24</small>
+                            </div>
+                            <p class="mb-1">Debit</p>
+                            <small>10/11/2023</small>
+                          </a>
+                          <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                              <h5 class="mb-1">ARCO PAYPOINT</h5>
+                              <small class="text-danger">-$220.42</small>
+                            </div>
+                            <p class="mb-1">Debit</p>
+                            <small>10/10/2023</small>
+                          </a>
+                          <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                              <h5 class="mb-1">WIRE TRANSFER</h5>
+                              <small class="text-danger">+$11,200.00</small>
+                            </div>
+                            <p class="mb-1">Credit</p>
+                            <small>10/09/2023</small>
+                          </a>
+                          <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                              <h5 class="mb-1">MOBILE DEPOSIT</h5>
+                              <small class="text-success">+$3,400.00</small>
+                            </div>
+                            <p class="mb-1">Debit</p>
+                            <small>10/06/2023</small>
+                          </a>
+                          <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                              <h5 class="mb-1">ATM WITHDRAWAL</h5>
+                              <small class="text-danger">-$600.00</small>
+                            </div>
+                            <p class="mb-1">Debit</p>
+                            <small>10/05/2023</small>
+                          </a>
+                          <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                              <h5 class="mb-1">PURCHASE RUBIO'S</h5>
+                              <small class="text-danger">-$120.00</small>
+                            </div>
+                            <p class="mb-1">Debit</p>
+                            <small>10/03/2023</small>
+                          </a>
+                          <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                              <h5 class="mb-1">STARBUCKS</h5>
+                              <small class="text-danger">-$22.00</small>
+                            </div>
+                            <p class="mb-1">Debit</p>
+                            <small>9/30/2023</small>
+                          </a>
+                          <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                              <h5 class="mb-1">PURCHASE WALMART</h5>
+                              <small class="text-danger">-$212.00</small>
+                            </div>
+                            <p class="mb-1">Debit</p>
+                            <small>9/27/2023</small>
+                          </a>
+                          <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                              <h5 class="mb-1">ONLINE TRANSFER(...9873)</h5>
+                              <small class="text-danger">-$2,202.00</small>
+                            </div>
+                            <p class="mb-1">Debit</p>
+                            <small>9/27/2023</small>
+                          </a>
+                          <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                              <h5 class="mb-1">MOBILE DEPOSIT</h5>
+                              <small class="text-success">+$4,200.00</small>
+                            </div>
+                            <p class="mb-1">Credit</p>
+                            <small>9/25/2023</small>
+                          </a>
+                          <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                              <h5 class="mb-1">STARBUCKS</h5>
+                              <small class="text-danger">-$22.00</small>
+                            </div>
+                            <p class="mb-1">Debit</p>
+                            <small>9/23/2023</small>
+                          </a>
+                          <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                              <h5 class="mb-1">PURCHASE CASHAPP</h5>
+                              <small class="text-danger">$1,500.00</small>
+                            </div>
+                            <p class="mb-1">Debit</p>
+                            <small>9/23/2023</small>
+                          </a>
+                          <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                              <h5 class="mb-1">PURCHASE APPLE STORE</h5>
+                              <small class="text-danger">-$2,750.00</small>
+                            </div>
+                            <p class="mb-1">Debit</p>
+                            <small>9/21/2023</small>
+                          </a>
+                          <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                              <h5 class="mb-1">PURCHASE CASHAPP</h5>
+                              <small class="text-danger">-$1,200.00</small>
+                            </div>
+                            <p class="mb-1">Debit</p>
+                            <small>9/21/2023</small>
+                          </a>
+                          <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                              <h5 class="mb-1">ONLINE TRANSFER</h5>
+                              <small class="text-success">+$2,120.40</small>
+                            </div>
+                            <p class="mb-1">Credit</p>
+                            <small>9/10/2023</small>
+                          </a>
+                          <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                              <h5 class="mb-1">STARBUCKS</h5>
+                              <small class="text-danger">-$42.65</small>
+                            </div>
+                            <p class="mb-1">Debit</p>
+                            <small>9/09/2023</small>
+                          </a>
+                          <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                              <h5 class="mb-1">PURCHASE WALMART</h5>
+                              <small class="text-danger">-$420.53</small>
+                            </div>
+                            <p class="mb-1">Debit</p>
+                            <small>9/09/2023</small>
+                          </a>
+                          <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                              <h5 class="mb-1">PURCHASE RUBIO'S</h5>
+                              <small class="text-danger">-$92.30</small>
+                            </div>
+                            <p class="mb-1">Debit</p>
+                            <small>9/07/2023</small>
+                          </a>
+                          <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                              <h5 class="mb-1">PURCHASE TARGET</h5>
+                              <small class="text-danger">-$310.38</small>
+                            </div>
+                            <p class="mb-1">Debit</p>
+                            <small>9/07/2023</small>
+                          </a>
+                          <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                              <h5 class="mb-1">STARBUCKS</h5>
+                              <small class="text-danger">-$22.33</small>
+                            </div>
+                            <p class="mb-1">Debit</p>
+                            <small>9/05/2023</small>
+                          </a>
+                          <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                              <h5 class="mb-1">PIZZA</h5>
+                              <small class="text-danger">-$29.32</small>
+                            </div>
+                            <p class="mb-1">Debit</p>
+                            <small>9/03/2023</small>
+                          </a>
+                          <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                              <h5 class="mb-1">PURCHASE NETFLIX</h5>
+                              <small class="text-danger">-$19.32</small>
+                            </div>
+                            <p class="mb-1">Debit</p>
+                            <small>9/02/2023</small>
+                          </a>
+                          <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                              <h5 class="mb-1">PURCHASE PRIME-STORE</h5>
+                              <small class="text-danger">-$16.40</small>
+                            </div>
+                            <p class="mb-1">Debit</p>
+                            <small>9/01/2023</small>
+                          </a>
+                          <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                              <h5 class="mb-1">MOBILE DEPOSIT</h5>
+                              <small class="text-danger">+$3,500.00</small>
+                            </div>
+                            <p class="mb-1">Credit</p>
+                            <small>8/29/2023</small>
+                          </a>
+                          <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                              <h5 class="mb-1">PURE AUSTIN FITNESS</h5>
+                              <small class="text-danger">-$79.00</small>
+                            </div>
+                            <p class="mb-1">Debit</p>
+                            <small>8/29/2023</small>
+                          </a>
+                          <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                              <h5 class="mb-1">PURCHASE MCDONALD</h5>
+                              <small class="text-danger">-$24.30</small>
+                            </div>
+                            <p class="mb-1">Debit</p>
+                            <small>8/27/2023</small>
+                          </a>
+                          <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                              <h5 class="mb-1">ACRO PAYPOINT</h5>
+                              <small class="text-danger">$-40.00</small>
+                            </div>
+                            <p class="mb-1">Debit</p>
+                            <small>8/27/2023</small>
+                          </a>
+                          <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                              <h5 class="mb-1">ACRO PAYPOINT</h5>
+                              <small class="text-danger">$-40.00</small>
+                            </div>
+                            <p class="mb-1">Debit</p>
+                            <small>8/27/2023</small>
+                          </a>
+                          <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                              <h5 class="mb-1">ATM WITHDRAWAL</h5>
+                              <small class="text-danger">$-400.00</small>
+                            </div>
+                            <p class="mb-1">Debit</p>
+                            <small>8/25/2023</small>
+                          </a>
+                          <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                              <h5 class="mb-1">ATM WITHDRAWAL</h5>
+                              <small class="text-danger">$-200.40</small>
+                            </div>
+                            <p class="mb-1">Debit</p>
+                            <small>8/23/2023</small>
+                          </a>
+                          <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                              <h5 class="mb-1">PURCHASE STARBUCKS</h5>
+                              <small class="text-danger">$-40.00</small>
+                            </div>
+                            <p class="mb-1">Debit</p>
+                            <small>8/22/2023</small>
+                          </a>
+                          <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                              <h5 class="mb-1">MOBILE DEPOSIT</h5>
+                              <small class="text-danger">+$2,500.00</small>
+                            </div>
+                            <p class="mb-1">Credit</p>
+                            <small>8/21/2023</small>
+                          </a>
+                          <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                              <h5 class="mb-1">ACRO PAYPOINT</h5>
+                              <small class="text-danger">-$40.00</small>
+                            </div>
+                            <p class="mb-1">Debit</p>
+                            <small>8/20/2023</small>
+                          </a>
+                          <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                              <h5 class="mb-1">PURCHASE MCDONALD</h5>
+                              <small class="text-danger">-$20.00</small>
+                            </div>
+                            <p class="mb-1">Debit</p>
+                            <small>8/19/2023</small>
+                          </a>
+                          <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                              <h5 class="mb-1">ATM WITHDRAWAL</h5>
+                              <small class="text-danger">-$250.00</small>
+                            </div>
+                            <p class="mb-1">Debit</p>
+                            <small>8/17/2023</small>
+                          </a>
+                          <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                              <h5 class="mb-1">WIRE TRANSFER</h5>
+                              <small class="text-danger">-$14,120.00</small>
+                            </div>
+                            <p class="mb-1">Credit</p>
+                            <small>8/14/2023</small>
+                          </a>
+                          <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                              <h5 class="mb-1">ACRO PAYPOINT</h5>
+                              <small class="text-danger">-$40.00</small>
+                            </div>
+                            <p class="mb-1">Debit</p>
+                            <small>8/13/2023</small>
+                          </a>
+                          <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                              <h5 class="mb-1">MOBILE DEPOSIT</h5>
+                              <small class="text-danger">+$3,300.00</small>
+                            </div>
+                            <p class="mb-1">Credit</p>
+                            <small>8/12/2023</small>
+                          </a>
+                          <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                              <h5 class="mb-1">STARBUCKS</h5>
+                              <small class="text-danger">-$40.00</small>
+                            </div>
+                            <p class="mb-1">Debit</p>
+                            <small>8/11/2023</small>
+                          </a>
+                        </div>
+                  </div>
+                 </div>
+
+       <!-- bottom tab -->
+       <div class="bottom-tab">
+        <!-- home -->
+        <a href="home.html">
+            <img src="assets/wallet-svgrepo-com.svg" alt="" style="width: 30px;">
+            <p>Accounts</p>
+        </a>
+        <!-- transfers -->
+        <a href="transfer.html">
+            <img src="https://www.svgrepo.com/show/497321/money-recive.svg" alt="" style="width: 30px;">
+            <p>Transfers</p>
+        </a>
+        <!-- activity -->
+        <a href="activity.html">
+            <img src="https://www.svgrepo.com/show/511086/note-edit.svg" alt="" style="width: 30px;">
+            <p>Activities</p>
+        </a>
+        <!-- more -->
+        <a href="home.html">
+            <img src="https://www.svgrepo.com/show/532195/menu.svg" alt="" style="width: 30px;">
+            <p>More</p>
+        </a>
+    </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

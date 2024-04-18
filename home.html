@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <style>
+        .body{
+            background-color: white;
+        }
+        .bottom-tab {
+            width: 100vw;
+            display: flex;
+            gap: 40px;
+            justify-content: center;
+            padding: 10px 0px;
+            border-top: 1px solid gray;
+            position: fixed;
+            bottom: 0;
+            background: white;
+        }
+        .bottom-tab a {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-decoration: none;
+            color: black;
+            font-size: small;
+        }
+        @media (min-width:768px) and (max-width:1400px) {
+          .col-lg{
+            margin-top: 10px;
+          }  
+          .cent{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+          }
+          .cardlarge{
+            border-radius: 0px;
+          }
+          .cardlarge1{
+            margin-top: 0px;
+            border-radius: 0px;
+          }
+        }
+        @media (min-width:100px) and (max-width:768px) {
+            .body{
+                background-color: royalblue;
+            }
+            .col-lg{
+                margin-top: -30px;
+            }
+            .cardlarge1{
+                border-radius: 0px;
+                margin-top: 15px;
+            }
+            .cardlarge{
+                border-radius: 0px;
+                margin-bottom: -17px;
+            }
+        }
+    
+    </style>
+</head>
+<body class="body">
+    <div class="container">
+
+        <div>
+            <p>
+                <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#logoutcollapse" aria-expanded="false" aria-controls="logoutcollapse">
+                    <i class="bi bi-person-circle text-white" style="font-size: xx-large;"></i>               
+                 </button>
+            </p>   
+            <div>
+                <div class="collapse collapse-horizontal" id="logoutcollapse">
+                  <div class="card card-body" style="width: 100px;">
+                    <a href="index.html" class="float-end text-dark text-decoration-none">Log out</a>
+                  </div>
+                </div>
+              </div>
+        </div>
+
+        <center>
+            <div class="row">
+                <div class="col">
+                    <a href="index.html"><img src="newheaderlogo.svg" class="img-fluid col-lg mb-5" width="150px">
+                    </a>
+                </div>
+            </div>
+        </center>
+
+       
+
+        
+
+       <div class="row">
+        <div class="col">
+            <nav class="navbar navbar-expand-md navbar-expand-lg  fixed-top d-none d-md-block" style="background-color: royalblue; height: 90px;">
+                <div class="container-fluid">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="margin-top: 35px;">
+                      <li class="nav-item">
+                        <a class="nav-link text-white" aria-current="page" href="home.html">Accounts</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-white" href="transfer.html">Transfer</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-white" href="activity.html">Activities</a>
+                      </li>
+                    </ul>
+                    
+                    
+              
+                    <span>
+                        <div>
+                            <p>
+                                <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#logoutcollapse" aria-expanded="false" aria-controls="logoutcollapse">
+                                    <i class="bi bi-person-circle text-white" style="font-size: xx-large;"></i>               
+                                 </button>
+                            </p>   
+                            <div>
+                                <div class="collapse collapse-horizontal" id="logoutcollapse">
+                                  <div class="card card-body" style="width: 100px;">
+                                    <a href="index.html" class="float-end text-dark text-decoration-none">Log out</a>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                    </span>
+                  </div>
+                </div>
+              </nav>
+        </div>
+       </div>
+
+                <div class="row">
+                    <div class="col">
+                        <p class="text-black" style="font-size: xx-large;">Good morning</p>
+                        <p class="text-black mb-5" style="margin-top:-18px; font-size: large;">October 15, 2023</p>
+                    </div>
+                </div>
+
+
+        <div class="card cardlarge">
+            <div class="card-body">
+               <p class="icon-link icon-link-hover link-success link-underline-success link-underline-opacity-25">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/>
+                  </svg> Accounts
+               </p>
+            </div>
+        </div>
+
+        
+        <div class="card cardlarge1">
+            <div class="card-body">
+                <h5 class="card-title"><a href="#" class="text-decoration-none link-overlay">NIGHTCLUB EXCURSIONS</a></h5>
+                <div>
+                    <p class="card-text float-end">
+                        $11,500.66
+                    </p>
+                </div>
+                <br>
+                <div>
+                    <p class="card-text float-end">
+                        Available balance
+                    </p>
+                </div><br>
+                <hr>
+                <a href="#" class="btn btn-outline-primary float-end" role="button" data-bs-toggle="button">Transfer money</a>
+            </div>
+        </div>
+
+        <div class="card  cardlarge1">
+            <div class="card-body">
+                <h5 class="card-title"><a href="#" class="text-decoration-none">VIP CLUB MEMBERSHIP</a></h5>
+                <div>
+                    <p class="card-text float-end">
+                        $19,430.69
+                    </p>
+                </div>
+                <br>
+                <div>
+                    <p class="card-text float-end">
+                        Available balance
+                    </p>
+                </div><br>
+                <hr>
+                <a href="#" class="btn btn-outline-primary float-end" role="button" data-bs-toggle="button">Transfer money</a>
+            </div>
+        </div>
+
+        
+        <div class="card  cardlarge1">
+            <div class="card-body">
+                <h5 class="card-title"><a href="#" class="text-decoration-none">EVENT HOSTING</a></h5>
+                <div>
+                    <p class="card-text float-end">
+                        $13,590.99
+                    </p>
+                </div>
+                <br>
+                <div>
+                    <p class="card-text float-end">
+                        Current balance
+                    </p>
+                </div><br>
+                <hr>
+                <a href="#" class="btn btn-outline-primary float-end" role="button" data-bs-toggle="button">Transfer money</a>
+            </div>
+        </div>
+
+       <!-- bottom tab -->
+       <div class="bottom-tab">
+            <!-- home -->
+            <a href="home.html">
+                <img src="assets/wallet-svgrepo-com.svg" alt="" style="width: 30px;">
+                <p>Accounts</p>
+            </a>
+            <!-- transfers -->
+            <a href="transfer.html">
+                <img src="https://www.svgrepo.com/show/497321/money-recive.svg" alt="" style="width: 30px;">
+                <p>Transfers</p>
+            </a>
+            <!-- activity -->
+            <a href="activity.html">
+                <img src="https://www.svgrepo.com/show/511086/note-edit.svg" alt="" style="width: 30px;">
+                <p>Activities</p>
+            </a>
+            <!-- more -->
+            <a href="home.html">
+                <img src="https://www.svgrepo.com/show/532195/menu.svg" alt="" style="width: 30px;">
+                <p>More</p>
+            </a>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
